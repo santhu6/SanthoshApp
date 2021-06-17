@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <item type="id" tools:ignore="DuplicateDefinition" name="login" />
+
+    <item name="text1" type="id" />
+    <item name="button1" type="id" />
+
+</resources>
