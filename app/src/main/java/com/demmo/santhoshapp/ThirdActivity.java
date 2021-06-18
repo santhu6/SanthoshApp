@@ -26,7 +26,7 @@ public class ThirdActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView);
 
         Intent myIntent = getIntent();
-        String message = myIntent.getStringExtra("name") + " - "+ myIntent.getStringExtra("purpose");
+        String message = myIntent.getStringExtra("name") + " - " + myIntent.getStringExtra("purpose");
         textView.setText(message);
 
         browse.setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ public class ThirdActivity extends AppCompatActivity {
                 //implicit intent for opening the browser
                 String readUrl = editurl.getText().toString();
                 Intent implicitIntent = new Intent(Intent.ACTION_VIEW);
-                Uri myurl = Uri.parse("https://"+readUrl);
+                Uri myurl = Uri.parse("https://" + readUrl);
                 implicitIntent.setData(myurl);
                 startActivity(implicitIntent);
                 //sendActionIntent();
@@ -44,9 +44,9 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     //implicit intent for send text messages
-    public void sendActionIntent(){
+    public void sendActionIntent() {
         Intent sendIntent = new Intent(Intent.ACTION_SEND);
-        sendIntent.putExtra(Intent.EXTRA_TEXT,"sending message through sms");
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "sending message through sms");
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
     }

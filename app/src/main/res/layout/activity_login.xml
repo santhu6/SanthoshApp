@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#e6e6e6"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#e6e6e6">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_margin="15dp"
-        android:padding="10dp"
         android:background="@drawable/background_border"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <TextView
-            android:text="username"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textColor="@color/black" />
+
         <EditText
             android:id="@+id/userId"
-            android:hint="santhu"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="santhu" />
 
         <TextView
-            android:text="Password"
-            android:textColor="@color/black"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/pwd"
-            android:hint="santhu@143"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:hint="santhu@143" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Login"
             android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:background="#03A9F4"
-            android:layout_gravity="center_horizontal"/>
+            android:text="Login" />
 
 
         <Button
+            android:id="@+id/login_btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/login_btn2"
-            android:text="Btn2"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:text="Btn2" />
     </LinearLayout>
 
 </RelativeLayout>
